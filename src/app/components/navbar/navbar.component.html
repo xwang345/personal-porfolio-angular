@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-md bg-primary navbar-dark">
+  <a class="navbar-brand" routerLink="/welcome">Xiaochen Wang</a>
+  <button
+    class="navbar-toggler border-0"
+    data-toggle="collapse"
+    data-target="#dropdown"
+  >
+    <i class="fa fa-bars"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="dropdown">
+    <ul class="navbar-nav ml-auto" id="navigation">
+      <li class="nav-item text-right">
+        <a class="nav-link" routerLinkActive="active" routerLink="/welcome"
+          >Welcome</a
+        >
+      </li>
+      <li class="nav-item text-right">
+        <a
+          class="nav-link"
+          routerLinkActive="active"
+          routerLink="/coding-challenges"
+          >Coding Challenges</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
