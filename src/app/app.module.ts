@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IntroductionPageComponent } from './pages/introduction-page/introduction-page.component';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
+import { ExperiencePageComponent } from './pages/experience-page/experience-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
     SkillsPageComponent,
     NavbarComponent,
     FooterComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    ExperiencePageComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
