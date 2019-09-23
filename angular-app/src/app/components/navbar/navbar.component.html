@@ -1,27 +1,36 @@
 <nav class="navbar navbar-expand-md bg-primary navbar-dark">
   <a class="navbar-brand" routerLink="/welcome">Xiaochen Wang</a>
-  <button
-    class="navbar-toggler border-0"
-    data-toggle="collapse"
-    data-target="#dropdown"
-  >
+  <button class="navbar-toggler border-0" data-toggle="collapse"
+    data-target="#dropdown">
     <i class="fa fa-bars"></i>
   </button>
 
   <div class="collapse navbar-collapse" id="dropdown">
     <ul class="navbar-nav ml-auto" id="navigation">
-      <li class="nav-item text-right">
-        <a class="nav-link" routerLink="/welcome" routerLinkActive="active">Welcome</a>
-      </li>
-      <li class="nav-item text-right">
-        <a class="nav-link" routerLink="/coding-challenges" routerLinkActive="active">Coding Challenges</a>
-      </li>
-      <li class="nav-item text-right">
-        <a class="nav-link" routerLink="/skills-page" routerLinkActive="active">Skills</a>
-      </li>
-      <li class="nav-item text-right">
-        <a class="nav-link" routerLink="/experience-page" routerLinkActive="active">Experience</a>
-      </li>
+      <div class="icon">
+        <li class="nav-item text-right">
+            <i class="ion-home"></i>
+            <a class="nav-link" routerLink="/welcome" routerLinkActive="active">Welcome</a>
+          </li>
+      </div>
+      <div class="icon">
+        <li class="nav-item text-right">
+            <i class="ion-settings"></i>
+            <a class="nav-link" routerLink="/coding-challenges" routerLinkActive="active">Project</a>
+        </li>
+      </div>
+      <div class="icon">
+        <li class="nav-item text-right">
+            <i class="ion-gear-b"></i>
+            <a class="nav-link" routerLink="/skills-page" routerLinkActive="active">Skills</a>
+        </li>
+      </div>
+      <div class="icon">
+        <li class="nav-item text-right">
+            <i class="ion-briefcase"></i>
+            <a class="nav-link" routerLink="/experience-page" routerLinkActive="active">Experience</a>
+        </li>
+      </div>
     </ul>
   </div>
 </nav>

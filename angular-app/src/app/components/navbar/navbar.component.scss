@@ -3,3 +3,32 @@
     border-top: 1px solid white;
   }
 }
+.icon{
+  width: 100px;
+  position: relative;
+  display: inline-block;
+}
+
+.icon i {
+  color: black;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+}
+
+.icon a{
+  position: relative;
+  width: 95px;
+  background: black;
+  color: grey;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.6s opacity;
+}
+
+.navbar-brand {
+  font-size: 50px;
+}

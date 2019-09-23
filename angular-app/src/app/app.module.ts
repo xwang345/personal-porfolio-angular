@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { IntroductionPageComponent } from './pages/introduction-page/introduction-page.component';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { ExperiencePageComponent } from './pages/experience-page/experience-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { ExperiencePageComponent } from './pages/experience-page/experience-page
     JumbotronComponent,
     ExperiencePageComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

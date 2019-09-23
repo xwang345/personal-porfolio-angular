@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
 
 html {
   min-height: 100%;
 }
 
 body {
-  background: url('http://genchi.info/image/toronto-wallpaper-hd-20.jpg')no-repeat center center fixed;
-  background-size: cover;
+  background: url('http://genchi.info/image/toronto-wallpaper-hd-20.jpg')no-repeat center fixed;
+  background-size: contain;
   min-height: 100%;
   margin-bottom: 100px;
   font-family: 'Lato', sans-serif;
