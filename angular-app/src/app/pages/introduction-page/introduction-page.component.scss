@@ -87,6 +87,10 @@ p {
     background:#333;
     color:#fff;
   }
+
+  p {
+    text-align: left;
+  }
   
   @media(max-width:960px){
     .container{
