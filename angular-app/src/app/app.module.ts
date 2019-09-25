@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProjectsPageComponent } from './pages/project-page/project-page.component';
@@ -11,9 +11,7 @@ import { IntroductionPageComponent } from './pages/introduction-page/introductio
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { ExperiencePageComponent } from './pages/experience-page/experience-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TodayComponent } from './today/today.component';
-import { WeatherComponent } from './weather/weather.component';
-
+import { TodayPageComponent } from './pages/today-page/today-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,10 +22,9 @@ import { WeatherComponent } from './weather/weather.component';
     FooterComponent,
     JumbotronComponent,
     ExperiencePageComponent,
-    TodayComponent,
-    WeatherComponent
+    TodayPageComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
 })
