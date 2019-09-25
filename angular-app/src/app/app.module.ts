@@ -12,6 +12,7 @@ import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { ExperiencePageComponent } from './pages/experience-page/experience-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodayComponent } from './today/today.component';
+import { WeatherComponent } from './weather/weather.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TodayComponent } from './today/today.component';
     FooterComponent,
     JumbotronComponent,
     ExperiencePageComponent,
-    TodayComponent
+    TodayComponent,
+    WeatherComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
