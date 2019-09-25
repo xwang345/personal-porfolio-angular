@@ -11,6 +11,7 @@ import { IntroductionPageComponent } from './pages/introduction-page/introductio
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { ExperiencePageComponent } from './pages/experience-page/experience-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TodayComponent } from './today/today.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavbarComponent,
     FooterComponent,
     JumbotronComponent,
-    ExperiencePageComponent
+    ExperiencePageComponent,
+    TodayComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
