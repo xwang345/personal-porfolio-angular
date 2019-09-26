@@ -12,6 +12,8 @@ import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { ExperiencePageComponent } from './pages/experience-page/experience-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodayPageComponent } from './pages/today-page/today-page.component';
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,13 @@ import { TodayPageComponent } from './pages/today-page/today-page.component';
     ExperiencePageComponent,
     TodayPageComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, HttpClientModule],
+  imports: [BrowserModule, 
+            AppRoutingModule, 
+            BrowserAnimationsModule, 
+            HttpClientModule, 
+            AgmCoreModule.forRoot({
+              apiKey: 'AIzaSyAyskDO_D4K3xFVNpHHBxOZnCNVXqhWl0c'
+            })],
   providers: [],
   bootstrap: [AppComponent]
 })
