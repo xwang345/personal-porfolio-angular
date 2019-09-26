@@ -26,10 +26,10 @@ import { AgmCoreModule } from '@agm/core';
     ExperiencePageComponent,
     TodayPageComponent
   ],
-  imports: [BrowserModule, 
-            AppRoutingModule, 
-            BrowserAnimationsModule, 
-            HttpClientModule, 
+  imports: [BrowserModule,
+            AppRoutingModule,
+            BrowserAnimationsModule,
+            HttpClientModule,
             AgmCoreModule.forRoot({
               apiKey: 'AIzaSyAyskDO_D4K3xFVNpHHBxOZnCNVXqhWl0c'
             })],

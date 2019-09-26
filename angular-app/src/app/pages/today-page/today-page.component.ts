@@ -7,9 +7,10 @@ import { WeatherService } from './../../weather.service';
   styleUrls: ['./today-page.component.scss']
 })
 export class TodayPageComponent implements OnInit {
-  lat;
-  lon;
-  weather;
+  lat: any;
+  lng: any;
+  weather: any;
+
   constructor(private WeatherComponent: WeatherService) { }
 
   ngOnInit() {
@@ -17,24 +18,24 @@ export class TodayPageComponent implements OnInit {
   }
 
   getLocation() {
-    if('geolocation' in navigator) {
+    if ('geolocation' in navigator) {
       navigator.geolocation.watchPosition(success => {
         this.lat = success.coords.latitude;
-        this.lon = success.coords.longitude;
+        this.lng = success.coords.longitude;
 
-        this.WeatherComponent.getWeatherDataByCoords(this.lat, this.lon).subscribe(data => {
+        this.WeatherComponent.getWeatherDataByCoords(this.lat, this.lng).subscribe(data => {
           this.weather = data;
         });
       });
     }
   }
 
-  getCity(city) {
-    this.WeatherComponent.getWeatherDataByCityName(city).subscribe((data:any) => {
+  getCity(city: any) {
+    this.WeatherComponent.getWeatherDataByCityName(city).subscribe((data: any) => {
       this.weather = data;
-      
+
       this.lat = data.coords.lat;
-      this.lon = data.coords.lon;
+      this.lng = data.coords.lon;
     });
   }
 }
