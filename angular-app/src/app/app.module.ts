@@ -12,6 +12,7 @@ import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { ExperiencePageComponent } from './pages/experience-page/experience-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodayPageComponent } from './pages/today-page/today-page.component';
+import { WeatherService } from './weather.service';
 import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
@@ -33,7 +34,7 @@ import { AgmCoreModule } from '@agm/core';
             AgmCoreModule.forRoot({
               apiKey: 'AIzaSyAyskDO_D4K3xFVNpHHBxOZnCNVXqhWl0c'
             })],
-  providers: [],
+  providers: [WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
