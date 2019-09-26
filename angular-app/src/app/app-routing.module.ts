@@ -4,7 +4,6 @@ import { ProjectsPageComponent } from './pages/project-page/project-page.compone
 import { IntroductionPageComponent } from './pages/introduction-page/introduction-page.component';
 import { SkillsPageComponent } from './pages/skills-page/skills-page.component';
 import { ExperiencePageComponent } from './pages/experience-page/experience-page.component';
-import { WeatherComponent } from './pages/weather/weather.component';
 import { TodayPageComponent } from './pages/today-page/today-page.component';
 import { ToastComponent } from 'ng-snotify';
 

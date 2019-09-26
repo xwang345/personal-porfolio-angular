@@ -8,10 +8,20 @@ export class WeatherService {
   url = 'https://api.openweathermap.org/data/2.5/weather';
   apiKey = '5fff614d1b96e850814b88fad461f370';
   constructor( private http: HttpClient) { }
+  
   getWeatherDataByCoords(lat, log) {
     let params = new HttpParams()
     .set('lat', lat)
     .set('lon', log)
+    .set('units', 'imperial')
+    .set('appid', this.apiKey)
+
+    return this.http.get(this.url, {params});
+  }
+
+  getWeatherDataByCityName(city: string) {
+    let params =  new HttpParams()
+    .set('q', city)
     .set('units', 'imperial')
     .set('appid', this.apiKey)
 

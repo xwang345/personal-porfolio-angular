@@ -15,9 +15,10 @@ export class TodayPageComponent implements OnInit {
   ngOnInit() {
     this.getLocation();
   }
+
   getLocation() {
     if('geolocation' in navigator) {
-      navigator.geolocation.watchPosition((success) => {
+      navigator.geolocation.watchPosition(success => {
         this.lat = success.coords.latitude;
         this.lon = success.coords.longitude;
 
@@ -26,5 +27,11 @@ export class TodayPageComponent implements OnInit {
         });
       });
     }
+  }
+
+  getCity(city) {
+    this.WeatherComponent.getWeatherDataByCityName(city).subscribe(data => {
+      this.weather = data;
+    });
   }
 }
