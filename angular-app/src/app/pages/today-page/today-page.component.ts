@@ -14,6 +14,7 @@ export class TodayPageComponent implements OnInit {
   weather: any;
   locationDeined:boolean = true;
   locationDeinedEnableCity:boolean = false;
+  waiting:boolean = false;
   constructor(private WeatherComponent: WeatherService) { }
 
   ngOnInit() {
