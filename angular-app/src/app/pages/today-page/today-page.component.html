@@ -1,5 +1,6 @@
 <div class="row">
     <div class="col-md-6 offset-md-3">
+        <div *ngIf="weather">
         <div class="col-sm-12 text-center">
 
             <div class="input-group mt-5">
@@ -41,7 +42,10 @@
             </tbody>
         </table>
     </div>
-    <agm-map [latitude]="lat" [longitude]="lng"></agm-map>
+    <agm-map [latitude]="latitude" [longitude]="longitude" [usePanning]="true">
+        <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+    </agm-map>
+    </div>
 </div>
 
 

@@ -30,8 +30,11 @@ export class TodayPageComponent implements OnInit {
   }
 
   getCity(city) {
-    this.WeatherComponent.getWeatherDataByCityName(city).subscribe(data => {
+    this.WeatherComponent.getWeatherDataByCityName(city).subscribe((data:any) => {
       this.weather = data;
+      
+      this.lat = data.coords.lat;
+      this.lon = data.coords.lon;
     });
   }
 }
