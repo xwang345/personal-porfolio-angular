@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-6 offset-md-3">
-        <div *ngIf="weather">
+        <div *ngIf="weather; else waiting">
         <div class="col-sm-12 text-center">
 
             <div class="input-group mt-5">
@@ -40,10 +40,20 @@
                 </tr>
             </tbody>
         </table>
+        <agm-map [latitude]="lat" [longitude]="lng" (mapClick)="getCoords($event)">
+                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+        <ng-template #waiting>
+                <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="" [ngIf]="locationDeined">
+      
+                <div class="input-group mt-5" *ngIf="locationDeinedEnableCity">
+                    <input class="from-control" type="text" #userInput placeholder="Enter city name">
+                    <div class="input-group-append">
+                        <button class="input-group-text btn btn-outline-primary" (click)="getCity(userInput.value)">Search</button>
+                    </div>
+                </div>
+        </ng-template>
     </div>
-    <agm-map [latitude]="lat" [longitude]="lng">
-        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-      </agm-map>
     </div>
 </div>
 
