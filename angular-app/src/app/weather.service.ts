@@ -9,7 +9,7 @@ export class WeatherService {
   apiKey = '5fff614d1b96e850814b88fad461f370';
   constructor( private http: HttpClient) { }
 
-  getWeatherDataByCoords(lat, log) {
+  getWeatherDataByCoords(lat: any, log: any) {
     const params = new HttpParams()
     .set('lat', lat)
     .set('lon', log)

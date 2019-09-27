@@ -30,8 +30,8 @@ export class TodayPageComponent implements OnInit {
         this.WeatherComponent.getWeatherDataByCoords(this.lat, this.lng).subscribe(data => {
           this.weather = data;
         });
-      }, error => {
-        if(error.code == error.PERMISSION_DENIED) {
+      }, (error) => {
+        if(error.code === error.PERMISSION_DENIED) {
             this.locationDeined = false;
             this.locationDeinedEnableCity = true;
         }

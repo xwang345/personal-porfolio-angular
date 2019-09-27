@@ -34,7 +34,7 @@ import { AgmCoreModule } from '@agm/core';
             AgmCoreModule.forRoot({
               apiKey: 'AIzaSyAyskDO_D4K3xFVNpHHBxOZnCNVXqhWl0c'
             })],
-  providers: [WeatherService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

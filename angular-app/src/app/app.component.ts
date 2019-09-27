@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { WeatherService } from './weather.service';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +6,4 @@ import { WeatherService } from './weather.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private WeatherService: WeatherService){
-
-  }
 }
