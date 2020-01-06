@@ -54,6 +54,10 @@ p {
     z-index:1;
     background:#225470;
     opacity:0.85;
+    background-image: url('./../../../assets/images/barraques.cat_background-wallpaper_7755.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
   
   .header-content{
