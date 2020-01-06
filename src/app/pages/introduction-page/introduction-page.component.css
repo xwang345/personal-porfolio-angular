@@ -57,6 +57,25 @@ p {
     background-image: url('./../../../assets/images/barraques.cat_background-wallpaper_7755.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+  }
+
+  @media(min-width:300px) {
+    .header-overlay{
+      height:100vh;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100vw;
+      z-index:1;
+      background:#3d708e;
+      opacity:0.85;
+      background-image: url('./../../../assets/images/barraques.cat_background-wallpaper_7755.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center center;
+    }
   }
   
   .header-content{

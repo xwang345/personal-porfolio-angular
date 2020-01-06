@@ -8,12 +8,12 @@ import { TodayPageComponent } from './pages/today-page/today-page.component';
 import { ToastComponent } from 'ng-snotify';
 
 const routes: Routes = [
-  { path: 'welcome', component: IntroductionPageComponent },
+  { path: 'home', component: IntroductionPageComponent },
   { path: 'project-page', component: ProjectsPageComponent },
   { path: 'skills-page', component: SkillsPageComponent },
   { path: 'experience-page', component: ExperiencePageComponent },
   { path: 'today-page', component: TodayPageComponent },
-  { path: '**', redirectTo: 'welcome', pathMatch: 'full' } // Catch-all redirect needs to be last in the routes.
+  { path: '**', redirectTo: 'home', pathMatch: 'full' } // Catch-all redirect needs to be last in the routes.
 ];
 
 @NgModule({
